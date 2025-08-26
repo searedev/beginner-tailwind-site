@@ -7,25 +7,41 @@
     <title>Beginner Tailwind</title>
   </head>
   <body>
-    <div class="bg-gradient-to-br from-white to-gray-300">
+    <div class="relative bg-gradient-to-br from-white to-gray-300">
       <!-- ################################################# -->
       <!-- header/navigation -->
       <!-- ################################################# -->
+      <!-- purple bar to help with the section transition -->
+      <div class="h-64 bg-purple-700 absolute bottom-0 inset-x-0"></div>
 
       <!-- left circle decoration -->
-       <div class="absolute top-0 left-0 translate-4">
-        <div class="h-64 w-64 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full opacity-50 absolute"></div>
-        <div class="h-64 w-64 bg-gradient-to-br from-teal-100 to-purple-200 rounded-full opacity-50 absolute ml-10 mt-10"></div>
-        <div class="h-64 w-64 bg-gradient-to-br from-teal-100 to-red-200 rounded-full opacity-50 absolute ml-24"></div>
-       </div>
+      <div class="absolute top-0 left-0 translate-4">
+        <div
+          class="h-64 w-64 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full opacity-50 absolute"
+        ></div>
+        <div
+          class="h-64 w-64 bg-gradient-to-br from-teal-100 to-purple-200 rounded-full opacity-50 absolute ml-10 mt-10"
+        ></div>
+        <div
+          class="h-64 w-64 bg-gradient-to-br from-teal-100 to-red-200 rounded-full opacity-50 absolute ml-24"
+        ></div>
+      </div>
 
       <!-- right circle decoration -->
-       <div class="absolute top-0 right-0 mr-48 translate-y-64 -translate-x-64 hidden lg:block">
-        <div class="h-64 w-64 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full opacity-50 absolute"></div>
-        <div class="h-64 w-64 bg-gradient-to-br from-teal-100 to-purple-200 rounded-full opacity-50 absolute ml-10 mt-10"></div>
-        <div class="h-64 w-64 bg-gradient-to-br from-teal-100 to-red-200 rounded-full opacity-50 absolute ml-24"></div>
-       </div>
-       
+      <div
+        class="absolute top-0 right-0 mr-48 translate-y-64 -translate-x-64 hidden lg:block"
+      >
+        <div
+          class="h-64 w-64 bg-gradient-to-br from-teal-100 to-teal-200 rounded-full opacity-50 absolute"
+        ></div>
+        <div
+          class="h-64 w-64 bg-gradient-to-br from-teal-100 to-purple-200 rounded-full opacity-50 absolute ml-10 mt-10"
+        ></div>
+        <div
+          class="h-64 w-64 bg-gradient-to-br from-teal-100 to-red-200 rounded-full opacity-50 absolute ml-24"
+        ></div>
+      </div>
+
       <!-- navigation -->
       <div class="text-gray-600 relative">
         <div class="container mx-auto flex justify-between py-6 px-6 lg:px-0">
@@ -130,6 +146,95 @@
 
     <!-- ################################################# -->
     <!-- overview -->
+    <div class="relative bg-purple-700 pb-24">
+      <!-- gray bar to help with the section transition -->
+      <div class="h-64 bg-gray-300 absolute bottom-0 inset-x-0"></div>
+
+      <div class="relative conatiner mx-auto px-6 lg:px-8">
+        <h2 class="mb-10 text-4xl lg:text-6xl font-bold text-purple-100">
+          Writing CSS is tough stuff!
+        </h2>
+
+        <div class="lg:flex lg:space-x-16 space-y-8 lg:space-y-0">
+          <!-- left column -->
+          <div
+            class="lg:w-2/3 bg-white p-8 lg:p-16 rounded shadow-2xl text-lg text-gray-800 space-y-8 leading-relaxed"
+          >
+            <p>
+              Tailwind makes writing CSS easier and lets us customize our
+              designs faster than any other CSS framework. If you want a CSS
+              framework that has pre-built components, then Tailwind may not be
+              for you. If you want a CSS framework that lets you design quickly
+              and customize your site, then
+              <strong class="font-bold text-teal-500"
+                >Tailwind is gonna be a lot of fun</strong
+              >.
+            </p>
+            <p>
+              After using Bulma to build
+              <a href="https://scotch.io" class="text-teal-500 hover:underline"
+                >Scotch.io</a
+              >, my CSS files became littered with my own
+              <code
+                class="text-sm bg-gray-200 p-1 rounded text-red-500 font-mono"
+                >!important</code
+              >
+              classes to override the framework's styles. Tailwind doesn't have
+              the
+              <code
+                class="text-sm bg-gray-200 p-1 rounded text-red-500 font-mono"
+                >!important</code
+              >
+              problem since all our elements are designed on the fly.
+            </p>
+            <p>
+              <strong class="font-bold">Important Note</strong>: Tailwind lets
+              us design quickly, but this doesn't mean that you don't need CSS
+              knowledge however. To use Tailwind, you need to have a good
+              understanding of CSS properties. In this course, we will learn
+              Tailwind and we'll also learn CSS concepts to create good looking
+              designs.
+              <strong class="font-bold"
+                >Tailwind is the ultimate CSS shorthand</strong
+              >, but we still need to learn the CSS, which we'll do in this
+              course.
+            </p>
+            <p class="reative text-xl lg:text-3xl italic">
+              <span
+                class="absolute text-3xl lg:text-6xl scale-150 -translate-3 lg:-translate-6 opacity-50"
+                >"</span
+              >This isn't just a Tailwind course. This is also a "learn how to
+              design with CSS" course.
+            </p>
+            <p>
+              The hardest things about learning Tailwind is memorizing the
+              classes and also knowing which classes go well together. We'll be
+              writing a lot of Tailwind in this course so that the repetition
+              will help us commit Tailwind classes to memory.
+            </p>
+          </div>
+
+          <!-- right column -->
+          <div class="flex-grow space-y-4 text-lg italic">
+            <div class="bg-purple-800 p-10 rounded- text-purple-200">
+              What classes should I use?
+            </div>
+            <div class="bg-purple-800 p-10 rounded-lg text-purple-200">
+              How do I make things look good?
+            </div>
+            <div class="bg-purple-800 p-10 rounded-lg text-purple-200">
+              My design looks basic?
+            </div>
+            <div class="bg-purple-800 p-10 rounded-lg text-purple-200">
+              How do I do responsive?
+            </div>
+            <div class="bg-purple-800 p-10 rounded-lg text-purple-200">
+              My typography looks bad?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ################################################# -->
 
     <!-- ################################################# -->
